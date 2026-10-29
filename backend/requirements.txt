@@ -1,0 +1,43 @@
+﻿# ─── Web Framework ─────────────────────────────────────
+fastapi==0.110.0
+uvicorn[standard]==0.29.0
+python-multipart==0.0.9
+gunicorn==21.2.0
+
+# ─── Database ──────────────────────────────────────────
+sqlalchemy==2.0.29
+psycopg2-binary==2.9.9
+alembic==1.13.1
+
+# ─── Data Processing ───────────────────────────────────
+pandas==2.1.4
+numpy==1.26.4
+
+# ─── Config & Logging ──────────────────────────────────
+python-dotenv==1.0.1
+loguru==0.7.2
+
+# ─── HTTP & Scraping ───────────────────────────────────
+requests==2.31.0
+httpx==0.27.0
+tenacity==8.2.3
+tqdm==4.66.2
+beautifulsoup4==4.12.3
+lxml==5.2.1
+apscheduler==3.10.4
+
+# ─── NLP ───────────────────────────────────────────────
+spacy==3.7.4
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
+
+# ─── ML ────────────────────────────────────────────────
+scikit-learn==1.4.2
+
+# ─── Deep Learning CPU Only ────────────────────────────
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.2.2+cpu
+transformers==4.40.1
+
+# ─── Analytics ─────────────────────────────────────────
+statsmodels==0.14.2
+plotly==5.21.0

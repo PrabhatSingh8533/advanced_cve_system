@@ -1,0 +1,66 @@
+﻿# # # ─── Python ────────────────────────────────────────────
+# # __pycache__/
+# # *.pyc
+# # *.pyo
+# # *.pyd
+# # .Python
+# # *.egg-info/
+# # dist/
+# # build/
+# # venv/
+# # .venv/
+# # env/
+
+# # # ─── ML Models (too large for git) ────────────────────
+# # backend/app/models/bert_real/
+# # backend/app/models/severity/
+# # backend/app/data/training/
+# # backend/app/data/cve_vocabulary.json
+# # *.pt
+# # *.pkl
+
+# # # ─── Test artifacts ────────────────────────────────────
+# # *.db
+# # *.sqlite
+# # test_cve.db
+# # test_results.txt
+# # fix_*.py
+
+# # # ─── Environment ───────────────────────────────────────
+# # .env
+# # *.env
+# # !.env.example
+
+# # # # ─── Frontend - Keep source, ignore build ──────────────
+# # # frontend/node_modules/
+# # # frontend/build/
+# # # frontend/.cache/
+
+# # # ─── Docker ────────────────────────────────────────────
+# # *.log
+
+# # # ─── IDE ───────────────────────────────────────────────
+# # .vscode/
+# # .idea/
+# # *.swp
+# # .DS_Store
+
+# # # Root package.json (not needed)
+# # /package.json
+
+# # # Root package.json (not needed)
+# # /package.json
+
+
+
+# # Ignore everything
+# *
+
+# # But allow these folders
+# !frontend/
+# !backend/
+
+# # Allow their contents
+# !frontend/**
+# !backend/**
+

@@ -1,0 +1,402 @@
+[
+  {
+    "text": "A vulnerability in enables attackers to obtain administrator access in versions before 2.0.",
+    "label": "Privilege Escalation",
+    "label_id": 5
+  },
+  {
+    "text": "CVE-2018-15971: permits remote attackers to cause denial of service in versions before 2.0.",
+    "label": "Denial of Service",
+    "label_id": 4
+  },
+  {
+    "text": "An issue was discovered that causes out-of-bounds write in image processing library in versions before 2.0.",
+    "label": "Buffer Overflow",
+    "label_id": 3
+  },
+  {
+    "text": "CVE-2021-39000: enables attacker to execute code with elevated privileges when processing user input.",
+    "label": "Remote Code Execution",
+    "label_id": 0
+  },
+  {
+    "text": "CVE-2022-28325: allows remote attackers to execute arbitrary code via a specially crafted request.",
+    "label": "Remote Code Execution",
+    "label_id": 0
+  },
+  {
+    "text": "An issue was discovered that can be exploited to run malicious code on target system via a specially crafted request.",
+    "label": "Remote Code Execution",
+    "label_id": 0
+  },
+  {
+    "text": "An issue was discovered that triggers heap-based buffer overflow in parsing function when processing user input.",
+    "label": "Buffer Overflow",
+    "label_id": 3
+  },
+  {
+    "text": "A vulnerability in enables blind SQL injection via search parameter.",
+    "label": "SQL Injection",
+    "label_id": 1
+  },
+  {
+    "text": "permits injection of malicious JavaScript code via a specially crafted request.",
+    "label": "Cross-Site Scripting",
+    "label_id": 2
+  },
+  {
+    "text": "enables login without valid credentials via a specially crafted request.",
+    "label": "Authentication Bypass",
+    "label_id": 7
+  },
+  {
+    "text": "CVE-2019-7329: vulnerable to SQL injection in the login form.",
+    "label": "SQL Injection",
+    "label_id": 1
+  },
+  {
+    "text": "A vulnerability in leads to stack-based overflow through malformed input.",
+    "label": "Buffer Overflow",
+    "label_id": 3
+  },
+  {
+    "text": "CVE-2023-46912: allows unprivileged users to execute commands as root.",
+    "label": "Privilege Escalation",
+    "label_id": 5
+  },
+  {
+    "text": "CVE-2019-49017: permits execution of arbitrary commands remotely when processing user input.",
+    "label": "Remote Code Execution",
+    "label_id": 0
+  },
+  {
+    "text": "An issue was discovered that results in memory corruption via oversized packets via a specially crafted request.",
+    "label": "Buffer Overflow",
+    "label_id": 3
+  },
+  {
+    "text": "A vulnerability in permits authentication bypass via crafted request in versions before 2.0.",
+    "label": "Authentication Bypass",
+    "label_id": 7
+  },
+  {
+    "text": "permits unauthenticated remote code execution in versions before 2.0.",
+    "label": "Remote Code Execution",
+    "label_id": 0
+  },
+  {
+    "text": "An issue was discovered that permits disclosure of private user information.",
+    "label": "Information Disclosure",
+    "label_id": 8
+  },
+  {
+    "text": "allows adversaries to read sensitive configuration files when processing user input.",
+    "label": "Information Disclosure",
+    "label_id": 8
+  },
+  {
+    "text": "allows arbitrary code execution through buffer overflow when processing user input.",
+    "label": "Buffer Overflow",
+    "label_id": 3
+  },
+  {
+    "text": "CVE-2023-46912: permits unprivileged users to execute commands as root.",
+    "label": "Privilege Escalation",
+    "label_id": 5
+  },
+  {
+    "text": "A vulnerability in enables adversaries to obtain administrator access in versions before 2.0.",
+    "label": "Privilege Escalation",
+    "label_id": 5
+  },
+  {
+    "text": "CVE-2019-49017: allows execution of malicious commands remotely when processing user input.",
+    "label": "Remote Code Execution",
+    "label_id": 0
+  },
+  {
+    "text": "causes memory exhaustion leading to service disruption via a specially crafted request.",
+    "label": "Denial of Service",
+    "label_id": 4
+  },
+  {
+    "text": "A vulnerability in allows directory traversal via dot-dot sequences in versions before 2.0.",
+    "label": "Path Traversal",
+    "label_id": 6
+  },
+  {
+    "text": "A vulnerability in leads to privilege escalation through race condition.",
+    "label": "Privilege Escalation",
+    "label_id": 5
+  },
+  {
+    "text": "permits unauthenticated network-based code execution in versions before 2.0.",
+    "label": "Remote Code Execution",
+    "label_id": 0
+  },
+  {
+    "text": "An issue was discovered that permits reading arbitrary files through path traversal via a specially crafted request.",
+    "label": "Path Traversal",
+    "label_id": 6
+  },
+  {
+    "text": "CVE-2019-49017: allows execution of arbitrary commands remotely when processing user input.",
+    "label": "Remote Code Execution",
+    "label_id": 0
+  },
+  {
+    "text": "CVE-2020-6233: permits script injection in comment fields.",
+    "label": "Cross-Site Scripting",
+    "label_id": 2
+  },
+  {
+    "text": "CVE-2023-81044: permits privilege escalation to root via SUID binary when processing user input.",
+    "label": "Privilege Escalation",
+    "label_id": 5
+  },
+  {
+    "text": "A vulnerability in permits unauthenticated access to admin panel via a specially crafted request.",
+    "label": "Authentication Bypass",
+    "label_id": 7
+  },
+  {
+    "text": "A vulnerability in permits unauthorized database access through SQL injection when processing user input.",
+    "label": "SQL Injection",
+    "label_id": 1
+  },
+  {
+    "text": "A vulnerability in allows extraction of sensitive data via SQL injection via a specially crafted request.",
+    "label": "SQL Injection",
+    "label_id": 1
+  },
+  {
+    "text": "An issue was discovered that results in infinite loop consuming system resources.",
+    "label": "Denial of Service",
+    "label_id": 4
+  },
+  {
+    "text": "An issue was discovered that allows DOM-based XSS through URL manipulation.",
+    "label": "Cross-Site Scripting",
+    "label_id": 2
+  },
+  {
+    "text": "allows bypass of authentication mechanisms.",
+    "label": "Authentication Bypass",
+    "label_id": 7
+  },
+  {
+    "text": "An issue was discovered that permits DOM-based XSS through URL manipulation.",
+    "label": "Cross-Site Scripting",
+    "label_id": 2
+  },
+  {
+    "text": "vulnerable to stored XSS in user profile fields.",
+    "label": "Cross-Site Scripting",
+    "label_id": 2
+  },
+  {
+    "text": "allows application crash through null pointer dereference in versions before 2.0.",
+    "label": "Denial of Service",
+    "label_id": 4
+  },
+  {
+    "text": "A vulnerability in permits cross-site scripting via the message parameter.",
+    "label": "Cross-Site Scripting",
+    "label_id": 2
+  },
+  {
+    "text": "permits application crash through null pointer dereference in versions before 2.0.",
+    "label": "Denial of Service",
+    "label_id": 4
+  },
+  {
+    "text": "CVE-2018-15971: allows remote attackers to cause denial of service in versions before 2.0.",
+    "label": "Denial of Service",
+    "label_id": 4
+  },
+  {
+    "text": "permits file inclusion via path traversal in filename when processing user input.",
+    "label": "Path Traversal",
+    "label_id": 6
+  },
+  {
+    "text": "An issue was discovered that enables remote code execution via crafted packets when processing user input.",
+    "label": "Remote Code Execution",
+    "label_id": 0
+  },
+  {
+    "text": "CVE-2023-44332: permits resource exhaustion via repeated requests in versions before 2.0.",
+    "label": "Denial of Service",
+    "label_id": 4
+  },
+  {
+    "text": "enables adversaries to inject SQL commands.",
+    "label": "SQL Injection",
+    "label_id": 1
+  },
+  {
+    "text": "allows malicious code execution through buffer overflow when processing user input.",
+    "label": "Buffer Overflow",
+    "label_id": 3
+  },
+  {
+    "text": "An issue was discovered that enables network-based code execution via crafted packets when processing user input.",
+    "label": "Remote Code Execution",
+    "label_id": 0
+  },
+  {
+    "text": "A vulnerability in permits local users to gain elevated privileges via a specially crafted request.",
+    "label": "Privilege Escalation",
+    "label_id": 5
+  },
+  {
+    "text": "permits bypass of authentication mechanisms.",
+    "label": "Authentication Bypass",
+    "label_id": 7
+  },
+  {
+    "text": "permits arbitrary code execution through buffer overflow when processing user input.",
+    "label": "Buffer Overflow",
+    "label_id": 3
+  },
+  {
+    "text": "A vulnerability in allows SQL injection via the username parameter in versions before 2.0.",
+    "label": "SQL Injection",
+    "label_id": 1
+  },
+  {
+    "text": "CVE-2024-86035: permits database manipulation through unsanitized input in versions before 2.0.",
+    "label": "SQL Injection",
+    "label_id": 1
+  },
+  {
+    "text": "A vulnerability in results in arbitrary code execution through JNDI injection when processing user input.",
+    "label": "Remote Code Execution",
+    "label_id": 0
+  },
+  {
+    "text": "CVE-2022-28325: permits remote attackers to execute arbitrary code via a specially crafted request.",
+    "label": "Remote Code Execution",
+    "label_id": 0
+  },
+  {
+    "text": "A vulnerability in allows authentication bypass via crafted request in versions before 2.0.",
+    "label": "Authentication Bypass",
+    "label_id": 7
+  },
+  {
+    "text": "permits injection of arbitrary JavaScript code via a specially crafted request.",
+    "label": "Cross-Site Scripting",
+    "label_id": 2
+  },
+  {
+    "text": "A vulnerability in permits directory traversal via dot-dot sequences in versions before 2.0.",
+    "label": "Path Traversal",
+    "label_id": 6
+  },
+  {
+    "text": "A vulnerability in results in malicious code execution through JNDI injection when processing user input.",
+    "label": "Remote Code Execution",
+    "label_id": 0
+  },
+  {
+    "text": "CVE-2020-37507: leads to malicious command execution on the server via a specially crafted request.",
+    "label": "Remote Code Execution",
+    "label_id": 0
+  },
+  {
+    "text": "A vulnerability in allows cross-site scripting via the message parameter.",
+    "label": "Cross-Site Scripting",
+    "label_id": 2
+  },
+  {
+    "text": "CVE-2024-60085: enables access to files outside the web root.",
+    "label": "Path Traversal",
+    "label_id": 6
+  },
+  {
+    "text": "A vulnerability in allows local users to gain elevated privileges via a specially crafted request.",
+    "label": "Privilege Escalation",
+    "label_id": 5
+  },
+  {
+    "text": "An issue was discovered that permits reading malicious files through path traversal via a specially crafted request.",
+    "label": "Path Traversal",
+    "label_id": 6
+  },
+  {
+    "text": "causes a buffer overflow via a long string in versions before 2.0.",
+    "label": "Buffer Overflow",
+    "label_id": 3
+  },
+  {
+    "text": "CVE-2022-28325: allows remote adversaries to execute arbitrary code via a specially crafted request.",
+    "label": "Remote Code Execution",
+    "label_id": 0
+  },
+  {
+    "text": "CVE-2018-26200: enables reading of arbitrary files on the server.",
+    "label": "Information Disclosure",
+    "label_id": 8
+  },
+  {
+    "text": "allows file inclusion via path traversal in filename when processing user input.",
+    "label": "Path Traversal",
+    "label_id": 6
+  },
+  {
+    "text": "leads to exposure of cryptographic keys.",
+    "label": "Information Disclosure",
+    "label_id": 8
+  },
+  {
+    "text": "enables attackers to inject SQL commands.",
+    "label": "SQL Injection",
+    "label_id": 1
+  },
+  {
+    "text": "CVE-2020-45748: enables crash of the application via malformed request in versions before 2.0.",
+    "label": "Denial of Service",
+    "label_id": 4
+  },
+  {
+    "text": "permits attackers to read sensitive configuration files when processing user input.",
+    "label": "Information Disclosure",
+    "label_id": 8
+  },
+  {
+    "text": "allows attackers to read sensitive configuration files when processing user input.",
+    "label": "Information Disclosure",
+    "label_id": 8
+  },
+  {
+    "text": "enables reflected cross-site scripting attacks.",
+    "label": "Cross-Site Scripting",
+    "label_id": 2
+  },
+  {
+    "text": "A vulnerability in permits SQL injection via the username parameter in versions before 2.0.",
+    "label": "SQL Injection",
+    "label_id": 1
+  },
+  {
+    "text": "CVE-2020-37507: leads to arbitrary command execution on the server via a specially crafted request.",
+    "label": "Remote Code Execution",
+    "label_id": 0
+  },
+  {
+    "text": "CVE-2018-15971: allows remote adversaries to cause denial of service in versions before 2.0.",
+    "label": "Denial of Service",
+    "label_id": 4
+  },
+  {
+    "text": "CVE-2018-26200: enables reading of malicious files on the server.",
+    "label": "Information Disclosure",
+    "label_id": 8
+  },
+  {
+    "text": "A vulnerability in permits extraction of sensitive data via SQL injection via a specially crafted request.",
+    "label": "SQL Injection",
+    "label_id": 1
+  }
+]

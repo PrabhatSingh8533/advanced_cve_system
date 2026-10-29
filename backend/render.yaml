@@ -1,0 +1,26 @@
+﻿services:
+  - type: web
+    name: cve-analysis-backend
+    runtime: python
+    region: oregon
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: cve-database
+          property: connectionString
+      - key: NVD_API_KEY
+        value: ""
+      - key: LOG_LEVEL
+        value: INFO
+      - key: DEBUG
+        value: "false"
+
+databases:
+  - name: cve-database
+    plan: free
+    region: oregon
+    databaseName: cve_db
+    user: cve_user

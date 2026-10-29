@@ -1,0 +1,110 @@
+﻿name: CVE System CI/CD
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+
+jobs:
+  backend-tests:
+    name: Backend Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        working-directory: ./backend
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pytest httpx
+
+      - name: Create test env
+        working-directory: ./backend
+        run: |
+          echo "DATABASE_URL=sqlite:///./test.db" > .env
+          echo "LOG_LEVEL=ERROR" >> .env
+          echo "NVD_API_KEY=" >> .env
+
+      - name: Run unit tests
+        working-directory: ./backend
+        run: python -m pytest tests/unit/ -v --tb=short
+
+      - name: Run integration tests
+        working-directory: ./backend
+        run: python -m pytest tests/integration/ -v --tb=short
+
+  frontend-build:
+    name: Frontend Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node 18
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+
+      - name: Install & Build
+        working-directory: ./frontend
+        run: |
+          npm install --legacy-peer-deps
+          echo "REACT_APP_API_URL=http://localhost:8000" > .env
+          npm run build
+
+  docker-build:
+    name: Docker Build Test
+    runs-on: ubuntu-latest
+    needs: [backend-tests, frontend-build]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build backend image
+        run: |
+          docker build -f backend/Dockerfile \
+            -t cve-backend:test ./backend
+
+      - name: Test container starts
+        run: |
+          docker run -d --name test-backend \
+            -e DATABASE_URL=sqlite:///./test.db \
+            -e LOG_LEVEL=ERROR \
+            -e NVD_API_KEY="" \
+            -p 8001:8000 \
+            cve-backend:test
+          sleep 15
+          curl -f http://localhost:8001/health
+          docker stop test-backend
+
+  deploy:
+    name: Deploy to Production
+    runs-on: ubuntu-latest
+    needs: [backend-tests, frontend-build, docker-build]
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SERVER_SSH_KEY }}
+          script: |
+            cd /opt/advanced-cve-system
+            git pull origin main
+            docker-compose -f docker-compose.prod.yml down
+            docker-compose -f docker-compose.prod.yml build --no-cache
+            docker-compose -f docker-compose.prod.yml up -d
+            echo "Deployment complete!"
